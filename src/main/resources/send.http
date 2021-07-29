@@ -1,0 +1,12 @@
+GET http://localhost:8080/mail?title=안녕
+Accept: application/json
+
+###
+POST http://localhost:8080/mail
+Content-Type: application/json
+
+{
+  "to": "molekzene@naver.com",
+  "title": "타이틀",
+  "body": "<form method='post' action='http://localhost:8080/mail/value'> 이름 : <input type='text' name='content' ><br> <input type='submit'></form>"
+}

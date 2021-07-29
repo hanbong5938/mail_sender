@@ -1,0 +1,6 @@
+spring:
+  mail:
+    host: { 호스트 }
+    port: { 포트 }
+    username: { 아이디 }
+    password: { 패스워드 }
