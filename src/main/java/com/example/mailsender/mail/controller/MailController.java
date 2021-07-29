@@ -18,10 +18,8 @@ public record MailController(MailService mailService) {
     }
 
     @GetMapping("/mail")
-    public ResponseEntity<String> execMail(
-            @RequestParam("title") String title
-    ) {
-        mailService.getMail(title);
+    public ResponseEntity<String> execMail() {
+        mailService.getMail();
         return ResponseEntity.ok("ok");
     }
 }
