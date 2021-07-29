@@ -5,7 +5,7 @@
 pop3 사용해서 메일 내용 읽기
 
 
-##POST http://localhost:8080/mail
+## POST http://localhost:8080/mail
 Content-Type: application/json
 
 {
