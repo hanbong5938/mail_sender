@@ -62,7 +62,7 @@ public class MailServiceImpl implements MailService {
     }
 
     @Override
-    public void getMail(String title) {
+    public void getMail() {
 
         String pop3Host = "pop." + host;
         try {
