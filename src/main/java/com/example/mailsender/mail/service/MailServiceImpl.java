@@ -85,9 +85,13 @@ public class MailServiceImpl implements MailService {
 
             // retrieve the messages from the folder in an array and print it
             Message[] messages = emailFolder.getMessages();
-            //발송인 메일 기준 
+            //발송인 메일 기준 검색
             //            Message[] messages = emailFolder.search(
             //        new FromTerm(new InternetAddress("메일주소"))
+            //);;
+            // 메일 제목 기준 정규식 검색
+            //            Message[] messages = emailFolder.search(
+            //        new SubjectTerm(".*" + title + " #.*")
             //);;
             System.out.println("messages.length---" + messages.length);
 
