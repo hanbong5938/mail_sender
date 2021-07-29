@@ -13,4 +13,5 @@ Content-Type: application/json
   "title": "타이틀",
   "body": "이름 : <input type='text' name='content' ><br>"
 }
-사용해서 메일 
+
+사용해서 메일 전송
