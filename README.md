@@ -1,8 +1,8 @@
 # mail_sender
 
 ## GET http://localhost:8080/mail
-타이틀 검색 기능 미적용X
 pop3 사용해서 메일 내용 읽기
+타이틀 검색 및 발송인 검색은 ServiceImpl에 주석처리 되어있다.
 
 
 ## POST http://localhost:8080/mail
