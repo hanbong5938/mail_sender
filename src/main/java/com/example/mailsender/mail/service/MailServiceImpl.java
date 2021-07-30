@@ -92,7 +92,15 @@ public class MailServiceImpl implements MailService {
             // 메일 제목 기준 정규식 검색
             //            Message[] messages = emailFolder.search(
             //        new SubjectTerm(".*" + title + " #.*")
-            //);;
+            //);
+            // 검색 여러개 사용시 AndTerm / OrTerm 사용
+            //           SearchTerm searchTerm = new AndTerm(
+            //        new FlagTerm(new Flags(Flags.Flag.SEEN), false),
+            //        new SubjectTerm(title)
+            //);
+            //Message[] messages = emailFolder.search(
+            //        searchTerm
+            //);
             System.out.println("messages.length---" + messages.length);
 
             for (Message message : messages) {
